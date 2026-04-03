@@ -16,7 +16,7 @@ getData(1)
         .then((res) => {
             return getData(3)
             .then((res) => {
-                console.log("The End");
+                console.log(res);
             })
         })
     })
