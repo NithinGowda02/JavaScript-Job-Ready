@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Daily App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Daily Weather</h1>
+        <div class="weather">
+            <div class="weather-input">
+                <input type="text" placeholder="City Name">
+                <div class="search-box">
+                    <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <p class="msg" aria-live="polite"></p>
+
+            <div class="weather-output">
+                <div class="weather-rain">
+                    <img src="./images/rain.png" alt="Weather icon">
+                    <div class="rain-text">
+                        <p class="degree"></p>
+                        <p class="city"></p>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="humidity">
+                        <img src="./images/humidity.png" alt="Humidity">
+                        <p class="percent"></p>
+                        <p class="text">Humidity</p>
+                    </div>
+
+                    <div class="precipitation">
+                        <img src="./images/precipitation.jpg" alt="Precipitation">
+                        <p class="percent"></p>
+                        <p class="text">Precipitation</p>
+                    </div>
+
+                    <div class="speed">
+                        <img src="./images/wind.png" alt="Wind Speed">
+                        <p class="percent"></p>
+                        <p class="text">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
